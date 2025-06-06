@@ -1,6 +1,8 @@
 ---
 layout: default
 ---
+**Name:** Aastha Patel  
+**Student Number:** 4407589
 
 Text can be **bold**, _italic_, or ~~strikethrough~~.
 
