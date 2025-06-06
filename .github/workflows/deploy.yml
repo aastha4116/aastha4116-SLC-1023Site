@@ -1,0 +1,19 @@
+name: Deploy Website   # Name of your workflow
+
+on:
+  push:
+    branches:
+      - master         # Triggers the workflow only when pushing to the 'master' branch
+jobs:
+  deploy:
+    runs-on: ubuntu-latest   # Use a Linux VM to run the job
+
+    steps:
+      - name: Checkout repository
+        uses: actions/checkout@v3   # Pulls your repo content
+
+      - name: Deploy to GitHub Pages
+        uses: JamesIves/github-pages-deploy-action@v4
+        with:
+          branch: gh-pages    # Target branch where GitHub Pages serves from
+          folder: .           # Folder to deploy (root of your repo)
